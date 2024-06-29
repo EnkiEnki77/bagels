@@ -6,8 +6,46 @@ from random import randint
 
 def main():
     """The main function that runs the program"""
-    
+    # State the rules of the game
+
+    # Generate the secret number
     secret_num = generate_secret_num() #Generates secret number for the program
+    # Let user know that you have a number in mind, and that they have 10 guesses to get it right
+
+    # Create loop that asks users to guess secret until theyve guessed 10 times
+        # Request user to guess the secret
+
+        # Create a string that keeps track of guess results. 
+        # Loop through guess accessing its values and indexes. 
+            # Check if guess value is in secret
+                # Check if guess value is the same as value at the same index in secret
+                    # Concatenate fermi to guess results
+                # If not
+                    # Concatenate pico to guess results
+            # Check if iteration is on last item of guess
+                # Check if guess results is empty string
+                    # Assign guess results as bagels
+                # Else check if guess results fermi fermi fermi
+                    # Assign guess results as correct guess
+
+        # Check if guess results is correct guess
+            # Tell user they guessed correctly, what their guess was, and what secret was
+            # Ask them if theyd like to play again
+                # If yes
+                    # Run program again
+                # Else if no
+                    # Close program
+        # Else 
+            # Tell user their guess was incorrect
+            # Tell user their hint
+            # Tell them how many guesses they have left.
+
+    # Tell them theyve lost, what the secret was and ask if theyd like to play again
+
+    # If yes 
+        # run the main program again
+    # If no
+        # exit the program
 
     print(secret_num)
 
